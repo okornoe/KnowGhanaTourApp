@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_places"
+            android:title="@string/places" />
+        <item
+            android:id="@+id/nav_hotel"
+            android:title="@string/hotels" />
+        <item
+            android:id="@+id/nav_business"
+            android:title="@string/business" />
+        <item
+            android:id="@+id/nav_attractions"
+            android:title="@string/attractions" />
+    </group>
+</menu>

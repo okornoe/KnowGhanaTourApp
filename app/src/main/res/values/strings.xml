@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">KnowGhana</string>
+
+    <!-- Menu Items -->
+    <string name="places">Places/Regions</string>
+    <string name="hotels">Hotels</string>
+    <string name="business">Businesses/Government Institutions</string>
+    <string name="attractions">Tourist Attractions</string>
+
+    <!-- Strings for various Regions in Ghana-->
+    <string name="greater_accra_region">Greater Accra Region</string>
+    <string name="eastern_region">Eastern Region</string>
+    <string name="volta_region">Volta Region</string>
+    <string name="western_region">Western Region</string>
+    <string name="ashanti_region">Ashanti Region</string>
+    <string name="brong_ahafo_region">Brong Ahafo Region</string>
+    <string name="northern_region">Northern Region</string>
+    <string name="upper_west_region">Upper West Region</string>
+    <string name="upper_east_region">Upper East Region</string>
+    <string name="central_region">Central Region</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
