@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_nav_drawer);
 
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.content_frame, new RegionFragment())
+                .commit();
+
         mDrawerLayout = findViewById(R.id.drawer_layout);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -42,9 +46,16 @@ public class MainActivity extends AppCompatActivity {
 
                         int id = menuItem.getItemId();
                         if(id == R.id.nav_places){
-                            setContentView(R.layout.activity_category);
+                            //setContentView(R.layout.activity_category);
                             getSupportFragmentManager().beginTransaction()
-                                    .replace(R.id.container, new RegionFragment())
+                                    .replace(R.id.content_frame, new RegionFragment())
+                                    .commit();
+                        }
+
+                        if (id == R.id.nav_hotel) {
+                            //setContentView(R.layout.activity_category);
+                            getSupportFragmentManager().beginTransaction()
+                                    .replace(R.id.content_frame, new HotelFragment())
                                     .commit();
                         }
                         return true;

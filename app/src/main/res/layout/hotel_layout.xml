@@ -1,49 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
     <ImageView
+        android:id="@+id/image"
         android:layout_width="88dp"
         android:layout_height="88dp"
-        android:src="@mipmap/ic_launcher"
-        android:id="@+id/image"/>
+        android:src="@mipmap/ic_launcher" />
 
     <LinearLayout
+        android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/text_container">
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/hotel_name_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
-            android:id="@+id/regional_name_text_view"
-            android:text="Regional Name" />
+            android:text="Hotel Name" />
+
 
         <TextView
+            android:id="@+id/location_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
-            android:id="@+id/region_name_text_view"
-            android:paddingBottom="20dp"
-            android:text="Region Name" />
+            android:text="Location" />
 
         <TextView
+            android:id="@+id/rating_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
-            android:id="@+id/regional_capital_text_view"
-            android:text="Regional Capital" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="8dp"
-            android:id="@+id/region_capital_text_view"
-            android:text="Region Capital" />
+            android:text="rating" />
 
     </LinearLayout>
 </LinearLayout>
