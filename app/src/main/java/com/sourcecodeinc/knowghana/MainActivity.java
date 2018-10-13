@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main_nav_drawer);
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.content_frame, new RegionFragment())
+                .replace(R.id.content_frame, new HomeFragment())
                 .commit();
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
@@ -45,6 +45,13 @@ public class MainActivity extends AppCompatActivity {
                         // For example, swap UI fragments here
 
                         int id = menuItem.getItemId();
+                        if (id == R.id.nav_home) {
+                            //setContentView(R.layout.activity_category);
+                            getSupportFragmentManager().beginTransaction()
+                                    .replace(R.id.content_frame, new HomeFragment())
+                                    .commit();
+                            getSupportActionBar().setTitle("Home, Know Ghana");
+                        }
                         if(id == R.id.nav_places){
                             //setContentView(R.layout.activity_category);
                             getSupportFragmentManager().beginTransaction()
@@ -59,6 +66,13 @@ public class MainActivity extends AppCompatActivity {
                                     .replace(R.id.content_frame, new HotelFragment())
                                     .commit();
                             getSupportActionBar().setTitle("Hotels");
+                        }
+
+                        if (id == R.id.nav_attractions) {
+                            getSupportFragmentManager().beginTransaction()
+                                    .replace(R.id.content_frame, new AttractionsFragment())
+                                    .commit();
+                            getSupportActionBar().setTitle("Attractions");
                         }
                         return true;
                     }

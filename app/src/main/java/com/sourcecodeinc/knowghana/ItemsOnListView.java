@@ -5,6 +5,7 @@ public class ItemsOnListView {
     private String regionCapital;
     private String location;
     private String hotelName;
+    private String attractionName;
     private String ratings;
 
     public ItemsOnListView (String regionName, String regionCapital) {
@@ -17,6 +18,12 @@ public class ItemsOnListView {
         this.location = location;
         this.ratings = ratings;
     }
+
+    public ItemsOnListView(String attractionName) {
+        this.attractionName = attractionName;
+    }
+
+
 
 
     public String getRegionName() {
@@ -37,5 +44,9 @@ public class ItemsOnListView {
 
     public String getRatings() {
         return ratings;
+    }
+
+    public String getAttractionName() {
+        return attractionName;
     }
 }
