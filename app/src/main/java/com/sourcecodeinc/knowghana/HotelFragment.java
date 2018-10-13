@@ -30,24 +30,24 @@ public class HotelFragment extends Fragment {
         final ArrayList<ItemsOnListView> items = new ArrayList<ItemsOnListView>();
         items.add(new ItemsOnListView("Kempeksi Hotel",
                 "Accra Central Business", "Five Star"));
-        items.add(new ItemsOnListView("Kempeksi Hotel",
+        items.add(new ItemsOnListView("Holiday Inn Hotel",
+                "Airport City, Accra", "Five Star"));
+        items.add(new ItemsOnListView("Best Western Hotel",
                 "Accra Central Business", "Five Star"));
-        items.add(new ItemsOnListView("Kempeksi Hotel",
+        items.add(new ItemsOnListView("Airport Hotel",
                 "Accra Central Business", "Five Star"));
-        items.add(new ItemsOnListView("Kempeksi Hotel",
+        items.add(new ItemsOnListView("Villa Gio Hotel",
                 "Accra Central Business", "Five Star"));
-        items.add(new ItemsOnListView("Kempeksi Hotel",
-                "Accra Central Business", "Five Star"));
-        items.add(new ItemsOnListView("Kempeksi Hotel",
-                "Accra Central Business", "Five Star"));
-        items.add(new ItemsOnListView("Kempeksi Hotel",
-                "Accra Central Business", "Five Star"));
-        items.add(new ItemsOnListView("Kempeksi Hotel",
-                "Accra Central Business", "Five Star"));
-        items.add(new ItemsOnListView("Kempeksi Hotel",
-                "Accra Central Business", "Five Star"));
-        items.add(new ItemsOnListView("Kempeksi Hotel",
-                "Accra Central Business", "Five Star"));
+        items.add(new ItemsOnListView("Tang Palace Hotel",
+                "Roman Ridge, Accra", "Four Star"));
+        items.add(new ItemsOnListView("Novotel",
+                "Barnes Road, Accra", "Five Star"));
+        items.add(new ItemsOnListView("Golden Tulip Hotel",
+                "Liberation Road", "Five Star"));
+        items.add(new ItemsOnListView("La Palm Royal Beach Hotel",
+                "Labadi Accra", "Four Star"));
+        items.add(new ItemsOnListView("Movenpic Hotel",
+                "Accra City", "Five Star"));
         HotelAdapter hotelAdapter = new HotelAdapter(getActivity(), items);
 
         ListView listView = rootView.findViewById(R.id.listView_layout);

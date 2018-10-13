@@ -24,6 +24,7 @@
             android:layout_gravity="center"
             android:layout_weight="0"
             android:scaleType="fitStart"
+            android:background="#ffffff"
             android:src="@drawable/ghana_flag2_edited" />
 
         <TextView
