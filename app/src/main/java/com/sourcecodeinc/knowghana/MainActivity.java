@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                             getSupportFragmentManager().beginTransaction()
                                     .replace(R.id.content_frame, new RegionFragment())
                                     .commit();
+                            getSupportActionBar().setTitle("Regions");
                         }
 
                         if (id == R.id.nav_hotel) {
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                             getSupportFragmentManager().beginTransaction()
                                     .replace(R.id.content_frame, new HotelFragment())
                                     .commit();
+                            getSupportActionBar().setTitle("Hotels");
                         }
                         return true;
                     }
