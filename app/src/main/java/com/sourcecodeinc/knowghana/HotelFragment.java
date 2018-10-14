@@ -42,8 +42,6 @@ public class HotelFragment extends Fragment {
                 "Roman Ridge, Accra", "Four Star", R.drawable.tang_palace_hotel));
         items.add(new ItemsOnListView("Novotel",
                 "Barnes Road, Accra", "Five Star", R.drawable.novotel));
-        // items.add(new ItemsOnListView("Golden Tulip Hotel",
-        //"Liberation Road", "Five Star", R.drawable.g));
         items.add(new ItemsOnListView("La Palm Royal Beach Hotel",
                 "Labadi Accra", "Four Star", R.drawable.labadi_pleasure_beach_hotel_accra));
         items.add(new ItemsOnListView("Movenpic Hotel",

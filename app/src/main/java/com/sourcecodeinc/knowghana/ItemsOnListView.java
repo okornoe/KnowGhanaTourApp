@@ -12,7 +12,6 @@ public class ItemsOnListView {
     public ItemsOnListView (String regionName, String regionCapital) {
         this.regionName = regionName;
         this.regionCapital = regionCapital;
-        //this.imageResourceId = imageResourceId;
     }
 
     public ItemsOnListView(String hotelName, String location, String ratings, int imageResourceId) {

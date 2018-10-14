@@ -46,14 +46,12 @@ public class MainActivity extends AppCompatActivity {
 
                         int id = menuItem.getItemId();
                         if (id == R.id.nav_home) {
-                            //setContentView(R.layout.activity_category);
                             getSupportFragmentManager().beginTransaction()
                                     .replace(R.id.content_frame, new HomeFragment())
                                     .commit();
                             getSupportActionBar().setTitle("Home, Know Ghana");
                         }
                         if(id == R.id.nav_places){
-                            //setContentView(R.layout.activity_category);
                             getSupportFragmentManager().beginTransaction()
                                     .replace(R.id.content_frame, new RegionFragment())
                                     .commit();
@@ -61,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                         if (id == R.id.nav_hotel) {
-                            //setContentView(R.layout.activity_category);
                             getSupportFragmentManager().beginTransaction()
                                     .replace(R.id.content_frame, new HotelFragment())
                                     .commit();
