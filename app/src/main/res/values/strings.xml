@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KnowGhana</string>
+    <string name="app_name">Know Ghana</string>
 
     <!-- Menu Items -->
     <string name="home">Home</string>
@@ -7,6 +7,18 @@
     <string name="hotels">Hotels</string>
     <string name="business">Businesses/Government Institutions</string>
     <string name="attractions">Tourist Attractions</string>
+
+    <string name="hotel_name">Hotel Name</string>
+    <string name="location">Location</string>
+    <string name="rating">rating</string>
+    <string name="attraction_name">Attraction Name</string>
+
+    <string name="regional_name">Regional Name</string>
+    <string name="region_name">Region Name</string>
+    <string name="regional_capital">Regional Capital</string>
+    <string name="region_capital">Region Capital</string>
+
+    <string name="welcome_ghana">Welcome to Ghana, A brief narration</string>
 
     <!-- Strings for various Regions in Ghana-->
     <string name="greater_accra_region">Greater Accra Region</string>
@@ -26,31 +38,31 @@
         on the continent. It has often been referred to as an "island of peace" in one of the most
         chaotic regions on earth. It shares boundaries with Togo to the east, la Cote d\'Ivoire to
         the west, Burkina Faso to the north and the Gulf of Guinea, to the south.
-        A recent discovery of oil in the Gulf of Guinea could make Ghana an important oil producer
-        and exporter in the next few years.
 
-The country\'s economy is dominated by agriculture, which employs about 40 percent of the working
+       <p>A recent discovery of oil in the Gulf of Guinea could make Ghana an important oil producer
+        and exporter in the next few years.The country\'s economy is dominated by agriculture,
+        which employs about 40 percent of the working
         population. Ghana is one of the leading exporters of cocoa in the world.
-        It is also a significant exporter of commodities such as gold and lumber.
-        A country covering an area of 238,500 square kilometres, Ghana has an estimated
+        It is also a significant exporter of commodities such as gold and lumber.</p>
+
+        <p>A country covering an area of 238,500 square kilometres, Ghana has an estimated
         population of 25,199,609 (July 2013 est.), drawn from more than one hundred ethnic
         groups - each with its own unique language. English, however, is the official language,
-        a legacy of British colonial rule.
+        a legacy of British colonial rule.</p>
 
-In 1957, Ghana (formerly known as the Gold Coast) became the first country in sub-Saharan Africa to
-        gain independence. After leading the country for nine years,
+
+       <p>In 1957, Ghana (formerly known as the Gold Coast) became the first country
+        in sub-Saharan Africa to gain independence. After leading the country for nine years,
         the nation\'s founding president, Kwame Nkrumah was overthrown in a coup d\'etat in 1966.
         After Kwame Nkrumah, Ghana was ruled by a series of military despots with intermittent
         experiments with democratic rule, most of which were curtailed by military takeovers.
         The latest and most enduring democratic experiment started in 1992 and it is what has
-        gained recognition for Ghana as a leading democracy in Africa.
+        gained recognition for Ghana as a leading democracy in Africa.</p>
 
-Ghana has several tourist attractions such as the castles. Most of the major international
+        <p>Ghana has several tourist attractions such as the castles. Most of the major international
         airlines fly into and from the international airport in Accra. Domestic air travel is
         thriving and the country has a vibrant telecommunications sector, with six cellular phone
-        operators and several internet service providers.
+        operators and several internet service providers.</p>
     </string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

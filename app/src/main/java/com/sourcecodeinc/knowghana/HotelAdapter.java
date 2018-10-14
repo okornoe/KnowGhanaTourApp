@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -38,6 +39,9 @@ public class HotelAdapter extends ArrayAdapter<ItemsOnListView> {
             TextView ratingTextView = listItemView.findViewById(R.id.rating_text_view);
             ratingTextView.setText(currentItem.getRatings());
             ratingTextView.setTextSize(18);
+
+            ImageView hotelImageView = listItemView.findViewById(R.id.hotel_image);
+            hotelImageView.setImageResource(currentItem.getImageResourceId());
         }
         return listItemView;
     }

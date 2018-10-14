@@ -29,25 +29,25 @@ public class HotelFragment extends Fragment {
 
         final ArrayList<ItemsOnListView> items = new ArrayList<ItemsOnListView>();
         items.add(new ItemsOnListView("Kempeksi Hotel",
-                "Accra Central Business", "Five Star"));
+                "Accra Central Business", "Five Star", R.drawable.kempeski_hotel));
         items.add(new ItemsOnListView("Holiday Inn Hotel",
-                "Airport City, Accra", "Five Star"));
+                "Airport City, Accra", "Five Star", R.drawable.holiday_inn_hotel));
         items.add(new ItemsOnListView("Best Western Hotel",
-                "Accra Central Business", "Five Star"));
+                "Accra Central Business", "Five Star", R.drawable.best_western_hotel));
         items.add(new ItemsOnListView("Airport Hotel",
-                "Accra Central Business", "Five Star"));
+                "Accra Central Business", "Five Star", R.drawable.airport_hotel));
         items.add(new ItemsOnListView("Villa Gio Hotel",
-                "Accra Central Business", "Five Star"));
+                "Accra Central Business", "Five Star", R.drawable.villa_gio_hotel));
         items.add(new ItemsOnListView("Tang Palace Hotel",
-                "Roman Ridge, Accra", "Four Star"));
+                "Roman Ridge, Accra", "Four Star", R.drawable.tang_palace_hotel));
         items.add(new ItemsOnListView("Novotel",
-                "Barnes Road, Accra", "Five Star"));
-        items.add(new ItemsOnListView("Golden Tulip Hotel",
-                "Liberation Road", "Five Star"));
+                "Barnes Road, Accra", "Five Star", R.drawable.novotel));
+        // items.add(new ItemsOnListView("Golden Tulip Hotel",
+        //"Liberation Road", "Five Star", R.drawable.g));
         items.add(new ItemsOnListView("La Palm Royal Beach Hotel",
-                "Labadi Accra", "Four Star"));
+                "Labadi Accra", "Four Star", R.drawable.labadi_pleasure_beach_hotel_accra));
         items.add(new ItemsOnListView("Movenpic Hotel",
-                "Accra City", "Five Star"));
+                "Accra City Hotel", "Five Star", R.drawable.novotel));
         HotelAdapter hotelAdapter = new HotelAdapter(getActivity(), items);
 
         ListView listView = rootView.findViewById(R.id.listView_layout);

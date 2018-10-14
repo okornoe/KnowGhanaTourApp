@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -30,6 +31,9 @@ public class AttractionsAdapter extends ArrayAdapter<ItemsOnListView> {
             TextView attractionNameTextView = listItemView.findViewById(R.id.attraction_name_text_view);
             attractionNameTextView.setText(currentItem.getAttractionName());
             attractionNameTextView.setTextSize(18);
+
+            ImageView attractionImageView = listItemView.findViewById(R.id.attraction_image);
+            attractionImageView.setImageResource(currentItem.getImageResourceId());
 
         }
         return listItemView;

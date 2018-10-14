@@ -28,15 +28,14 @@ public class AttractionsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view_layout, container, false);
 
         final ArrayList<ItemsOnListView> items = new ArrayList<ItemsOnListView>();
-        items.add(new ItemsOnListView("Black Star Square"));
-        items.add(new ItemsOnListView("Labadi Beach"));
-        items.add(new ItemsOnListView("Elmina Castle"));
-        items.add(new ItemsOnListView("Volta Lake"));
-        items.add(new ItemsOnListView("Kakum National Park"));
-        items.add(new ItemsOnListView("Mole National Park"));
-        items.add(new ItemsOnListView("Kwame Nkrumah Mausoleum"));
-        items.add(new ItemsOnListView("Cape Coast Castle"));
-        items.add(new ItemsOnListView("James Town"));
+        items.add(new ItemsOnListView("Black Star Square", R.drawable.black_star_square));
+        items.add(new ItemsOnListView("Labadi Beach", R.drawable.labadi_pleasure_beach_hotel_accra));
+        items.add(new ItemsOnListView("Elmina Castle", R.drawable.elmina_castle));
+        items.add(new ItemsOnListView("Volta Lake", R.drawable.volta_lake));
+        items.add(new ItemsOnListView("Kakum National Park", R.drawable.kakum_national_park));
+        items.add(new ItemsOnListView("Mole National Park", R.drawable.mole_national_park));
+        items.add(new ItemsOnListView("Kwame Nkrumah Mausoleum", R.drawable.kwame_nkrumah_mausoleum));
+        items.add(new ItemsOnListView("James Town", R.drawable.jamestown_light_house__accra));
 
 
         AttractionsAdapter attractionsAdapter = new AttractionsAdapter(getActivity(), items);

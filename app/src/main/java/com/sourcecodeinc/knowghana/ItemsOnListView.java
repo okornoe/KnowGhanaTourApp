@@ -7,20 +7,25 @@ public class ItemsOnListView {
     private String hotelName;
     private String attractionName;
     private String ratings;
+    private int imageResourceId;
 
     public ItemsOnListView (String regionName, String regionCapital) {
         this.regionName = regionName;
         this.regionCapital = regionCapital;
+        //this.imageResourceId = imageResourceId;
     }
 
-    public ItemsOnListView(String hotelName, String location, String ratings) {
+    public ItemsOnListView(String hotelName, String location, String ratings, int imageResourceId) {
         this.hotelName = hotelName;
         this.location = location;
         this.ratings = ratings;
+        this.imageResourceId = imageResourceId;
+
     }
 
-    public ItemsOnListView(String attractionName) {
+    public ItemsOnListView(String attractionName, int imageResourceId) {
         this.attractionName = attractionName;
+        this.imageResourceId = imageResourceId;
     }
 
 
@@ -48,5 +53,9 @@ public class ItemsOnListView {
 
     public String getAttractionName() {
         return attractionName;
+    }
+
+    public int getImageResourceId() {
+        return imageResourceId;
     }
 }
