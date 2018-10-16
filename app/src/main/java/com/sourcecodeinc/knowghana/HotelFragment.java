@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -28,24 +27,24 @@ public class HotelFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view_layout, container, false);
 
         final ArrayList<ItemsOnListView> items = new ArrayList<ItemsOnListView>();
-        items.add(new ItemsOnListView("Kempeksi Hotel",
-                "Accra Central Business", "Five Star", R.drawable.kempeski_hotel));
-        items.add(new ItemsOnListView("Holiday Inn Hotel",
-                "Airport City, Accra", "Five Star", R.drawable.holiday_inn_hotel));
-        items.add(new ItemsOnListView("Best Western Hotel",
-                "Accra Central Business", "Five Star", R.drawable.best_western_hotel));
-        items.add(new ItemsOnListView("Airport Hotel",
-                "Accra Central Business", "Five Star", R.drawable.airport_hotel));
-        items.add(new ItemsOnListView("Villa Gio Hotel",
-                "Accra Central Business", "Five Star", R.drawable.villa_gio_hotel));
-        items.add(new ItemsOnListView("Tang Palace Hotel",
-                "Roman Ridge, Accra", "Four Star", R.drawable.tang_palace_hotel));
-        items.add(new ItemsOnListView("Novotel",
-                "Barnes Road, Accra", "Five Star", R.drawable.novotel));
-        items.add(new ItemsOnListView("La Palm Royal Beach Hotel",
-                "Labadi Accra", "Four Star", R.drawable.labadi_pleasure_beach_hotel_accra));
-        items.add(new ItemsOnListView("Movenpic Hotel",
-                "Accra City Hotel", "Five Star", R.drawable.novotel));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.kempeski_hotel),
+                getActivity().getString(R.string.accra_central_business), getActivity().getString(R.string.five_star), R.drawable.kempeski_hotel));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.holiday_inn_hotel),
+                getActivity().getString(R.string.airport_city), getActivity().getString(R.string.four_star), R.drawable.holiday_inn_hotel));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.best_western_hotel),
+                getActivity().getString(R.string.accra_central_business), getActivity().getString(R.string.three_star), R.drawable.best_western_hotel));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.airport_hotel),
+                getActivity().getString(R.string.accra_central_business), getActivity().getString(R.string.three_star), R.drawable.airport_hotel));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.villa_gio_hotel),
+                getActivity().getString(R.string.accra_central_business), getActivity().getString(R.string.five_star), R.drawable.villa_gio_hotel));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.tang_palace_hotel),
+                getActivity().getString(R.string.roman_ridge), getActivity().getString(R.string.four_star), R.drawable.tang_palace_hotel));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.novotel_hotel),
+                getActivity().getString(R.string.barnes_road), getActivity().getString(R.string.three_star), R.drawable.novotel));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.la_palm_royal_beach_hotel),
+                getActivity().getString(R.string.labadi), getActivity().getString(R.string.five_star), R.drawable.labadi_pleasure_beach_hotel_accra));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.movenpick_hotel),
+                getActivity().getString(R.string.airport_city), getActivity().getString(R.string.five_star), R.drawable.novotel));
         HotelAdapter hotelAdapter = new HotelAdapter(getActivity(), items);
 
         ListView listView = rootView.findViewById(R.id.listView_layout);

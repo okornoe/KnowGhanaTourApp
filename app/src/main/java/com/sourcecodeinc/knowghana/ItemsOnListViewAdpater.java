@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -36,6 +37,19 @@ public class ItemsOnListViewAdpater extends ArrayAdapter<ItemsOnListView> {
         TextView regionalCapitalTextView = listItemView.findViewById(R.id.region_capital_text_view);
         regionalCapitalTextView.setText(currentItem.getRegionCapital());
         regionalCapitalTextView.setTextSize(18);
+
+
+        ImageView regionImageView = listItemView.findViewById(R.id.region_image);
+
+        if (currentItem.hasImage()) {
+            // If an image is available, display the provided image based on the resource ID
+            regionImageView.setImageResource(currentItem.getImageResourceId());
+            // Make sure the view is visible
+            regionImageView.setVisibility(View.VISIBLE);
+        } else {
+            // Otherwise hide the ImageView (set visibility to GONE)
+            regionImageView.setVisibility(View.GONE);
+        }
 
         return listItemView;
     }

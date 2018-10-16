@@ -12,8 +12,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class AttractionsAdapter extends ArrayAdapter<ItemsOnListView> {
-    public AttractionsAdapter(@NonNull Activity context, ArrayList<ItemsOnListView> list_items) {
+public class Attractions_RestaurantAdapter extends ArrayAdapter<ItemsOnListView> {
+    public Attractions_RestaurantAdapter(@NonNull Activity context, ArrayList<ItemsOnListView> list_items) {
         super(context, 0, list_items);
     }
 
@@ -23,7 +23,7 @@ public class AttractionsAdapter extends ArrayAdapter<ItemsOnListView> {
         //Checks if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.attraction_items, parent,
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.attraction_restaurant_items, parent,
                     false);
 
             ItemsOnListView currentItem = getItem(position);

@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -28,16 +27,16 @@ public class RegionFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view_layout, container, false);
 
         final ArrayList<ItemsOnListView> items =  new ArrayList<ItemsOnListView>();
-        items.add(new ItemsOnListView("Greater Accra Region", "Accra"));
-        items.add(new ItemsOnListView("Central Region", "Cape Coast"));
-        items.add(new ItemsOnListView("Western Region", "Takoradi"));
-        items.add(new ItemsOnListView("Volta Region", "Ho"));
-        items.add(new ItemsOnListView("Ashanti Region", "Kumasi"));
-        items.add(new ItemsOnListView("Eastern Region", "Koforidua"));
-        items.add(new ItemsOnListView("Brong Ahafo Region", "Sunyani"));
-        items.add(new ItemsOnListView("Northern Region", "Tamale"));
-        items.add(new ItemsOnListView("Upper West Region", "Wa"));
-        items.add(new ItemsOnListView("Upper East Region", "Bolgatango"));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.greater_accra_region), getActivity().getString(R.string.greater_accra_region)));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.central_region), getActivity().getString(R.string.central_capital)));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.western_region), getActivity().getString(R.string.western_capital)));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.volta_region), getActivity().getString(R.string.volta_capital), R.drawable.ho_region));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.ashanti_region), getActivity().getString(R.string.ashanti_capital)));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.eastern_region), getActivity().getString(R.string.eastern_capital)));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.brong_ahafo_region), getActivity().getString(R.string.brong_ahafo_capital)));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.northern_region), getActivity().getString(R.string.northern_capital)));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.upper_west_region), getActivity().getString(R.string.upper_west_capital)));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.upper_east_region), getActivity().getString(R.string.upper_east_capital)));
         ItemsOnListViewAdpater adapter = new ItemsOnListViewAdpater(getActivity(), items);
 
         ListView listView =  rootView.findViewById(R.id.listView_layout);

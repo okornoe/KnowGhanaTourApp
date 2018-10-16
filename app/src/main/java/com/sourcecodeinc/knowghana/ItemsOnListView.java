@@ -7,9 +7,16 @@ public class ItemsOnListView {
     private String hotelName;
     private String attractionName;
     private String ratings;
-    private int imageResourceId;
+    private static final int NO_IMAGE_PROVIDED = -1;
+    private int imageResourceId = NO_IMAGE_PROVIDED;
 
-    public ItemsOnListView (String regionName, String regionCapital) {
+    public ItemsOnListView(String regionName, String regionCapital, int imageResourceId) {
+        this.regionName = regionName;
+        this.regionCapital = regionCapital;
+        this.imageResourceId = imageResourceId;
+    }
+
+    public ItemsOnListView(String regionName, String regionCapital) {
         this.regionName = regionName;
         this.regionCapital = regionCapital;
     }
@@ -56,5 +63,9 @@ public class ItemsOnListView {
 
     public int getImageResourceId() {
         return imageResourceId;
+    }
+
+    public boolean hasImage() {
+        return imageResourceId != NO_IMAGE_PROVIDED;
     }
 }

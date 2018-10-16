@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -28,17 +27,17 @@ public class AttractionsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view_layout, container, false);
 
         final ArrayList<ItemsOnListView> items = new ArrayList<ItemsOnListView>();
-        items.add(new ItemsOnListView("Black Star Square", R.drawable.black_star_square));
-        items.add(new ItemsOnListView("Labadi Beach", R.drawable.labadi_pleasure_beach_hotel_accra));
-        items.add(new ItemsOnListView("Elmina Castle", R.drawable.elmina_castle));
-        items.add(new ItemsOnListView("Volta Lake", R.drawable.volta_lake));
-        items.add(new ItemsOnListView("Kakum National Park", R.drawable.kakum_national_park));
-        items.add(new ItemsOnListView("Mole National Park", R.drawable.mole_national_park));
-        items.add(new ItemsOnListView("Kwame Nkrumah Mausoleum", R.drawable.kwame_nkrumah_mausoleum));
-        items.add(new ItemsOnListView("James Town", R.drawable.jamestown_light_house__accra));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.black_star_square), R.drawable.black_star_square));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.labadi_beach), R.drawable.labadi_pleasure_beach_hotel_accra));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.elmina_castle), R.drawable.elmina_castle));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.volta_lake), R.drawable.volta_lake));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.kakum_national_park), R.drawable.kakum_national_park));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.mole_national_park), R.drawable.mole_national_park));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.kwame_nkrumah_mausoleum), R.drawable.kwame_nkrumah_mausoleum));
+        items.add(new ItemsOnListView(getActivity().getString(R.string.james_town), R.drawable.jamestown_light_house__accra));
 
 
-        AttractionsAdapter attractionsAdapter = new AttractionsAdapter(getActivity(), items);
+        Attractions_RestaurantAdapter attractionsAdapter = new Attractions_RestaurantAdapter(getActivity(), items);
 
         ListView listView = rootView.findViewById(R.id.listView_layout);
         listView.setAdapter(attractionsAdapter);
