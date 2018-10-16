@@ -22,24 +22,23 @@ public class ItemsOnListViewAdpater extends ArrayAdapter<ItemsOnListView> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         //Checks if the existing view is being reused, otherwise inflate the view
-        View listItemView = convertView;
-        if(listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.items_on_list_view, parent,
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.items_on_list_view, parent,
                     false);
         }
 
         ItemsOnListView currentItem  = getItem(position);
 
-        TextView regionNameTextView = listItemView.findViewById(R.id.region_name_text_view);
+        TextView regionNameTextView = convertView.findViewById(R.id.region_name_text_view);
         regionNameTextView.setText(currentItem.getRegionName());
         regionNameTextView.setTextSize(18);
 
-        TextView regionalCapitalTextView = listItemView.findViewById(R.id.region_capital_text_view);
+        TextView regionalCapitalTextView = convertView.findViewById(R.id.region_capital_text_view);
         regionalCapitalTextView.setText(currentItem.getRegionCapital());
         regionalCapitalTextView.setTextSize(18);
 
 
-        ImageView regionImageView = listItemView.findViewById(R.id.region_image);
+        ImageView regionImageView = convertView.findViewById(R.id.region_image);
 
         if (currentItem.hasImage()) {
             // If an image is available, display the provided image based on the resource ID
@@ -51,6 +50,6 @@ public class ItemsOnListViewAdpater extends ArrayAdapter<ItemsOnListView> {
             regionImageView.setVisibility(View.GONE);
         }
 
-        return listItemView;
+        return convertView;
     }
 }

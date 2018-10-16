@@ -21,21 +21,20 @@ public class Attractions_RestaurantAdapter extends ArrayAdapter<ItemsOnListView>
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         //Checks if the existing view is being reused, otherwise inflate the view
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.attraction_restaurant_items, parent,
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.attraction_restaurant_items, parent,
                     false);
 
             ItemsOnListView currentItem = getItem(position);
 
-            TextView attractionNameTextView = listItemView.findViewById(R.id.attraction_name_text_view);
+            TextView attractionNameTextView = convertView.findViewById(R.id.attraction_name_text_view);
             attractionNameTextView.setText(currentItem.getAttractionName());
             attractionNameTextView.setTextSize(18);
 
-            ImageView attractionImageView = listItemView.findViewById(R.id.attraction_image);
+            ImageView attractionImageView = convertView.findViewById(R.id.attraction_image);
             attractionImageView.setImageResource(currentItem.getImageResourceId());
 
         }
-        return listItemView;
+        return convertView;
     }
 }
