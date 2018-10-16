@@ -5,8 +5,10 @@
     <string name="home">Home</string>
     <string name="places">Places/Regions</string>
     <string name="hotels">Hotels</string>
-    <string name="business">Businesses/Government Institutions</string>
     <string name="attractions">Tourist Attractions</string>
+    <string name="home_know_ghana">Home, Know Ghana</string>
+    <string name="regions">Regions</string>
+    <string name="restaurant">Restaurants</string>
 
     <string name="hotel_name">Hotel Name</string>
     <string name="location">Location</string>
@@ -31,6 +33,64 @@
     <string name="upper_west_region">Upper West Region</string>
     <string name="upper_east_region">Upper East Region</string>
     <string name="central_region">Central Region</string>
+
+    <!-- Strings for various Regions in Ghana-->
+    <string name="kempeski_hotel">Kempeski Hotel</string>
+    <string name="holiday_inn_hotel">Holiday Inn Hotel</string>
+    <string name="best_western_hotel">Best Western Premier Hotel</string>
+    <string name="airport_hotel">Airport Hotel</string>
+    <string name="villa_gio_hotel">Villa Gio Hotel</string>
+    <string name="tang_palace_hotel">Tang Palace Hotel</string>
+    <string name="novotel_hotel">Novotel Hotel</string>
+    <string name="la_palm_royal_beach_hotel">La Palm Royal Beach</string>
+    <string name="movenpick_hotel">Movenpick Hotel</string>
+
+    <!-- Strings for various Hotel Locatins-->
+    <string name="accra_central_business">Accra Cental Business</string>
+    <string name="airport_city">Airport City, Accra</string>
+    <string name="roman_ridge">Roman Ridge, Accra</string>
+    <string name="barnes_road">Barnes Roasd, Accra</string>
+    <string name="labadi">Labadi</string>
+
+    <!-- Strings for various Hotel Ratings-->
+    <string name="five_star">Five star</string>
+    <string name="four_star">Four star</string>
+    <string name="three_star">Three star</string>
+    <string name="two_star">Two star</string>
+
+    <!-- Strings for various Restaurants in Ghana-->
+    <string name="auntie_annie">Auntie Anne Restaurant</string>
+    <string name="burger_king">Burger King Restaurant</string>
+    <string name="dome">Dome Restaurant</string>
+    <string name="hard_rock_cafe">Hard Rock Restaurant</string>
+    <string name="olive_garden">Olive Garden Restaurant</string>
+    <string name="perkins_restaurant">Perkins Restaurant</string>
+    <string name="swift_restaurant">Swift Restaurant</string>
+    <string name="mckeown_restaurant">Mckeown Restaurant</string>
+    <string name="one_time">One Time Restaurant</string>
+
+    <!-- List Of Attractions -->
+    <string name="black_star_square">Black Star Square</string>
+    <string name="labadi_beach">Labadi Beach</string>
+    <string name="elmina_castle">Elmina Castle</string>
+    <string name="volta_lake">Volta Lake</string>
+    <string name="kakum_national_park">Kakum National Park</string>
+    <string name="mole_national_park">Mole National Park</string>
+    <string name="kwame_nkrumah_mausoleum">Kwame Nkrumah Mausoleum</string>
+    <string name="james_town">James Town</string>
+
+
+    <!-- Strings for various Regional Capital in Ghana-->
+    <string name="greater_accra_capital">Accra Region</string>
+    <string name="eastern_capital">Koforidua</string>
+    <string name="volta_capital">Ho</string>
+    <string name="western_capital">Takoradi</string>
+    <string name="ashanti_capital">Kumasi</string>
+    <string name="brong_ahafo_capital">Sunyani</string>
+    <string name="northern_capital">Tamale</string>
+    <string name="upper_west_capital">Wa</string>
+    <string name="upper_east_capital">Bolgatanga</string>
+    <string name="central_capital">Cape Coast</string>
 
     <!-- Brief Story about ghana, content from ghanaweb.com-->
     <string name="briefNarrationGhana">
@@ -64,5 +124,8 @@
         thriving and the country has a vibrant telecommunications sector, with six cellular phone
         operators and several internet service providers.</p>
     </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
